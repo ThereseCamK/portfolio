@@ -26,7 +26,7 @@ body {
     grid-area: header;
     text-shadow: slategray 3px 3px 5px;
     border-radius: 5px;
-    background-image: url("logo.png");
+    background-image: url("/img/logo.png");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 250px 120px;
@@ -65,6 +65,7 @@ body {
     flex-direction: column;
     background-color:  rgb(190, 170, 160);
     box-shadow: rgb(203, 204, 207) 5px 5px 5px;
+    overflow: scroll;
 
   }
   /* #logoIMG{
@@ -166,33 +167,22 @@ background-color: rgba(124, 119, 112, 0.603);
   background-color: rgba(124, 119, 112, 0.603);
 }
 
-/*reting system*/
-.star{
-  color: grey;
-  font-size: 2.0rem;
-  padding: 0 1rem; /* space out the stars */
-}
-.star::before{
-  content: '\2606';    /* star outline */
-  cursor: pointer;
-}
-.star.rated::before{
-  /* the style for a selected star */
-  content: '\2605';  /* filled star */
+/*rating system*/
+
+#ratingStars{
+  color: gray;
+  float: left;
+  font-style: 500%;
+  
+  margin-left: 10%;
 }
 
-.stars{
-    counter-reset: rateme 0;   
-    font-size: 2.0rem;
-    font-weight: 900;
-}
-.star.rated{
-    counter-increment: rateme 1;
-}
-.stars::after{
-    content: counter(rateme) '/5';
-}
 
+.gray {
+  color: gray;
+  float: left;
+  font-style: 500%;
+}
 
 @media (max-width: 790px) {
   

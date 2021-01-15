@@ -33,7 +33,7 @@ const model = {
             id: 1, 
             comment: " veldig bra ",
             name: "  tessa",
-            rating: 0,
+            rating: 1,
         },
 
         ]
