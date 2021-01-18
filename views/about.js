@@ -3,7 +3,7 @@ function aboutView(){
     var headerInAbout = aboutPageView.header;
    
     html = `
-    <div class="centerAbout">
+    <div class="centerAbout" >
 
      <div class="headerInAbout"> ${headerInAbout}</div>
      <p> Jeg er en dame som er i Praksis på GET Academy som lærer i programmering <br>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AdminPage</title>
+    <script src="js/model.js"></script>
+    <script src="views/about.js"></script>
+    <script src="views/blog.js "></script>
+    <script src="views/feedback.js"></script>
+    <link href="index.html" />
+</head>
+<body>
+    <div id="adminContent"></div>
+
+    <script>
+        adminView();
+        function adminView(){
+          
+            html = `
+                <input type="text" placeholder="legg inn ett bloggInlegg" oninput="model.pagesContent.blogPage.content = this.value"></input>
+                
+                <button onclick="addBlog()">Lagre</button>
+            `;
+            document.getElementById('adminContent').innerHTML = html;
+        }
+
+        function addBlog(){
+            const blogComitment = model.pagesContent.blogPage.content;
+            var blogDate = new Date();
+
+            model.pagesContent.blogPage.push({
+                content: `${blogComitment}`,
+                date: `${blogDate}`,
+            })
+
+            blogPage();
+            
+        }
+    </script>
+</body>
+</html>

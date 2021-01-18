@@ -1,9 +1,8 @@
 
 function selectStar(n) {
     rating = n;
-   
-    feedbackPage();
-
+    
+feedbackPage();
 }
 
 function submitfeedback(){
@@ -19,7 +18,6 @@ if( feedbackComment != null && feedbackName != null && ratingFeedback != null ){
         rating: `${ratingFeedback}`
         
     })
-    
     rating = null;
 
 }

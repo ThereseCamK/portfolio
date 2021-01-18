@@ -15,7 +15,7 @@ function view(){
             IT-Utvikler under utdanning
         </div>
         <div id="navBar" class="linkToPages">
-        <a id="linkToPages" href="javascript:changePage('mainpage')">Forside</a>
+        <a id="linkToPages" href="javascript:changePage('projects')">Prosjekter</a>
         <a id="linkToPages" href="javascript:changePage('about')">Om meg</a>
         <a id="linkToPages" href="javascript:changePage('blog')">Blog</a>
         <a id="linkToPages" href="javascript:changePage('feedback')">Anmeldelser</a>
@@ -31,7 +31,6 @@ function view(){
     </div>
   
         <div id="mainContent"> 
-                
         </div> 
         <div id="footer"><hr> 
             <tt> Navn: </tt> ${footerInfo.name}<br>
@@ -49,7 +48,7 @@ updateView();
 
 function updateView(){
     const page = model.app.currentpage;
-    if(page === "mainpage") view();
+    if(page === "projects") projectView();
     else if (page === 'about') aboutView();
     else if (page === 'blog') blogPage();
     else if (page === 'feedback') feedbackPage();

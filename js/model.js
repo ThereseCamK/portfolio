@@ -1,6 +1,6 @@
 const model = {
    app: {
-    currentpage: 'feedback'
+    currentpage: 'about'
    },
 
     linksTopages: [{
@@ -12,7 +12,7 @@ const model = {
         name: "Github",
         SOME: href="https://github.com/ThereseCamK",
     },
-],
+    ],
 
 
     pagesContent: {
@@ -20,6 +20,7 @@ const model = {
             header: "Therese Camilla Kjær",
             infoContent:"",
         },
+        
       
     
         feedbackPage:[
@@ -35,8 +36,14 @@ const model = {
             name: "  tessa",
             rating: 1,
         },
+        ],
 
-        ]
+        blogPage:[{
+            content: "test",
+            date:"18.01.21",
+
+        },
+        ],
         
     },
 

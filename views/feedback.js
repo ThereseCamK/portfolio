@@ -16,7 +16,7 @@ function feedbackPage(){
             ${testView}
    
     <div> 
-        <input type="text" placeholder="Kommentar" id="feedbackComment" class="feedbackComment" oninput="model.pagesContent.feedbackPage.comment = this.value"> </input > <br>
+        <textarea placeholder="Kommentar" id="feedbackComment" class="feedbackComment" oninput="model.pagesContent.feedbackPage.comment = this.value"> </textarea> <br>
         <input type="text" placeholder="Navn" class="feedbackName"  oninput="model.pagesContent.feedbackPage.name = this.value"> </input>
         <button onclick="submitfeedback()" class="feedbackSubmitButton"> Send inn</button>
     </div>
