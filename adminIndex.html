@@ -18,12 +18,38 @@
         function adminView(){
           
             html = `
-                <input type="text" placeholder="legg inn ett bloggInlegg" oninput="model.pagesContent.blogPage.content = this.value"></input>
-                
-                <button onclick="addBlog()">Lagre</button>
+
+                <button onclick="addProjects()">Legg til Prosjekt</button><br>
+                <button onclick="addBlogCommitment()">Legg til Blog</button><br>
+                <button onclick="approveReview()"> Godkjen tilbakemeldinger</button>
+               
             `;
             document.getElementById('adminContent').innerHTML = html;
         }
+
+        function addBlogCommitment(){
+            html = `
+            <button onclick="adminView()"> tilbake </button>
+            <input type="text" placeholder="legg inn ett bloggInlegg" oninput="model.pagesContent.blogPage.content = this.value"></input>
+                
+            <button onclick="addBlog()">Lagre</button>
+            `
+            document.getElementById('adminContent').innerHTML = html;
+        }
+
+        function addProjects(){
+            html= `
+            <button onclick="adminView()"> tilbake </button>
+
+            <input type="text" placeholder="tittel" oninput="model.pagesContent.projectPage.title = this.value"></input>
+            <input type="text" placeholder="beskrivelse" oninput="model.pagesContent.projectPage.description = this.value"></input>
+            <input type="text" placeholder="link" oninput="model.pagesContent.projectPage.linkToPage = this.value"></input>
+
+            <button onclick="addProjectToPage()">Lagre</button>
+            `;
+            document.getElementById('adminContent').innerHTML = html;
+        }
+        
 
         function addBlog(){
             const blogComitment = model.pagesContent.blogPage.content;
@@ -37,6 +63,22 @@
             blogPage();
             
         }
+
+        function addProjectToPage(){
+            const projectTitle = model.pagesContent.projectPage.title;
+            const projectDescription = model.pagesContent.projectPage.description;
+            const projectLink = model.pagesContent.projectPage.linkToPage;
+
+            model.pagesContent.projectPage.push({
+                title: `${projectTitle}`,
+                description: `${projectDescription}`,
+                linkToPage: `${projectLink}`
+            })
+            projectView();
+
+        }
+
+
     </script>
 </body>
 </html>

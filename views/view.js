@@ -1,4 +1,4 @@
-
+var contentDiv = document.getElementById("content");
 view();
 function view(){
     let linksToSOME = model.linksTopages;

@@ -1,3 +1,4 @@
+
 const model = {
    app: {
     currentpage: 'about'
@@ -20,9 +21,6 @@ const model = {
             header: "Therese Camilla Kjær",
             infoContent:"",
         },
-        
-      
-    
         feedbackPage:[
             {
             id: 0, 
@@ -44,6 +42,18 @@ const model = {
 
         },
         ],
+
+        projectPage:[{
+            title: "Event",
+            description: "Det er en side hvor man kan lage eventer",
+            linkToPage: href="",
+        },
+        {
+            title: "rekorder",
+            description: "side hvor det listet opp rekorder til brukeren",
+            linkToPage: href="",
+        }
+    ]
         
     },
 
