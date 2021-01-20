@@ -65,19 +65,22 @@ body {
 
   #mainContent {
 
- 
+    
     margin-left: 5px;
     grid-area: mainContent;
     text-align: center;
-   color: white;
+    color: white;
     display: flex;
     flex-direction: column;
     background-color:  rgb(190, 170, 160);
     box-shadow: rgb(203, 204, 207) 5px 5px 5px;
     overflow: scroll;
-
+    
+   
   }
- 
+  ::-webkit-scrollbar {
+    display: none;
+}
 #footer{
 
     font-size: 15px;

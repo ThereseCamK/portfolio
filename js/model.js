@@ -1,7 +1,7 @@
 
 const model = {
    app: {
-    currentpage: 'about'
+    currentpage: 'feedback'
    },
 
     linksTopages: [{
@@ -24,7 +24,7 @@ const model = {
         feedbackPage:[
             {
             id: 0, 
-            comment: "testing",
+            comment: "heterrr",
             name: "therese",
             rating: 3,
         },

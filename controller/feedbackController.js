@@ -1,12 +1,12 @@
 
 function selectStar(n) {
     rating = n;
-    
-feedbackPage();
+
+    feedbackPage();
 }
 
-function submitfeedback(){
-    
+
+function submitfeedback(){   
     const feedbackComment = model.pagesContent.feedbackPage.comment;
     const feedbackName = model.pagesContent.feedbackPage.name;
     const ratingFeedback = rating;
@@ -16,14 +16,12 @@ if( feedbackComment != null && feedbackName != null && ratingFeedback != null ){
         comment: `${feedbackComment}`,
         name: `${feedbackName}`,
         rating: `${ratingFeedback}`
-        
     })
     rating = null;
-
 }
+
 else alert("det mangler, navn, stjerne eller kommentar ");
    
-
     feedbackPage();
 }
 
