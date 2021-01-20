@@ -69,7 +69,7 @@ body {
     margin-left: 5px;
     grid-area: mainContent;
     text-align: center;
-   
+   color: white;
     display: flex;
     flex-direction: column;
     background-color:  rgb(190, 170, 160);
@@ -137,7 +137,7 @@ a:hover{
   box-shadow:  rgba(0,0,0,0.2) 2px 2px 2px;
   padding: 10px;
   text-shadow: slategray 3px 3px 5px;
-  color: grey;
+  color: white;
   font-size: 20px;
   
 }
@@ -149,7 +149,7 @@ a:hover{
   
   padding: 10px;
   text-shadow: slategray 3px 3px 5px;
-  color: grey;
+  color: white;
   font-size: 20px;
 }
 .heading {
