@@ -34,7 +34,7 @@ body {
     grid-area: header;
     text-shadow: slategray 3px 3px 5px;
     border-radius: 5px;
-    background-image: url("/img/logo.png");
+    background-image: url("https://github.com/ThereseCamK/portfolio/blob/main/img/logo.png?raw=true");
     background-position: top left;
     background-repeat: no-repeat;
     background-size: 250px 120px;
@@ -127,11 +127,11 @@ a:hover{
 
 
 .centerAbout {
-  background-image: urL("/img/therese.jpg");
+  /* background-image: urL("/img/therese.jpg");
   background-repeat: no-repeat;
   background-size: 60% 80%;
-  background-position: center;
-  margin: auto;
+  background-position: center;*/
+  margin: auto; 
   width: 60%;
   border: 3px solid transparent;
   box-shadow:  rgba(0,0,0,0.2) 2px 2px 2px;
